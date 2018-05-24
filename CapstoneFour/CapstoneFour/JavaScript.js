@@ -78,6 +78,7 @@ function addItem(n, p, c) {
         };
     cart.push(item);
     listCart(cart);
+    Total(cart);
 }
 
 function listCart(cart) {
@@ -96,24 +97,37 @@ function listCart(cart) {
         cell2.innerHTML = cart[i].price;
         cell3.innerHTML = cart[i].count;
     }
+  
 }
 
 function Total(cart) {
     var subtotal = 0;
-    for (var i = 0; i <= cart.length; i++) {
+    for (var i = 0; i < cart.length; i++) {
 
-        subtotal = item.price++;
+        subtotal += parseFloat(cart[i].price);
     }
     var total = subtotal * 1.06;
     
     var table = document.getElementById('total');
-    table.innerHTML = ""; {
-        var row = table.insertRow(0);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = subtotal;
-        cell2.innerHTML = total;
-    }
+    table.innerHTML = "";
+
+   var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "subtotal";
+    cell2.innerHTML = "total";
+
+     row = table.insertRow(1);
+     cell1 = row.insertCell(0);
+     cell2 = row.insertCell(1);
+    cell1.innerHTML = subtotal;
+    cell2.innerHTML = total;
+
+
+      
+
+
+    
 }
 
 
