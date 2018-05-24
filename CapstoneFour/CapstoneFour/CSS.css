@@ -1,0 +1,60 @@
+﻿.topnav {
+    background-color: darkslategray;
+    overflow: hidden;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 12px 12px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+}
+
+table.table {
+    background-color: mediumseagreen;
+    border-collapse: collapse;
+}
+
+table.table1 {
+    background-color: mediumseagreen;
+    border-collapse: collapse;
+    /*position:fixed;
+    top:54px;
+    right:10px;*/
+}
+
+table.table2 {
+    background-color: mediumseagreen;
+    border-collapse: collapse;
+    /*position: fixed;
+    top: 200px;
+    right: 10px;*/
+}
+/*body {
+    background-image: url('Images/thV0QBH235.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}*/

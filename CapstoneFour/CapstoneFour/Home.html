@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="CSS.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="CSS.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#Main.html">Home</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="footer">
+        <p>Royal Oak Sports Apparel . 526 Main St . Royal Oak, MI 48067 . www.ROSA.net . 248-565-2800</p>
+    </div>
+    <table border="1" class="table">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Add to Cart</th>
+        </tr>
+        <tr>
+            <td>Tigers T-shirt</td>
+            <td>$9.99</td>
+            <td><button type="button" onclick="addItem('Tigers T-shirt', 9.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Tigers Ball Cap</td>
+            <td>$12.99</td>
+            <td><button type="button" onclick="addItem('Tigers Ball Cap', 12.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Tigers Car Flag</td>
+            <td>$14.99</td>
+            <td><button type="button" onclick="addItem('Tigers Car Flag', 14.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Pistons T-shirt</td>
+            <td>$9.99</td>
+            <td><button type="button" onclick="addItem('Pistons T-shirt', 9.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Pistons Ball Cap</td>
+            <td>$12.99</td>
+            <td><button type="button" onclick="addItem('Pistons Ball Cap', 12.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Pistons Car Flag</td>
+            <td>$14.99</td>
+            <td><button type="button" onclick="addItem('Pistons Car Flag', 14.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Red Wings T-shirt</td>
+            <td>$9.99</td>
+            <td><button type="button" onclick="addItem('Red Wings T-shirt', 9.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Red Wings Ball Cap</td>
+            <td>$12.99</td>
+            <td><button type="button" onclick="addItem('Red Wings Ball Cap', 12.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Red Wings Car Flag</td>
+            <td>$14.99</td>
+            <td><button type="button" onclick="addItem('Red Wings Car Flag', 14.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Lions T-shirt</td>
+            <td>$9.99</td>
+            <td><button type="button" onclick="addItem('Lions T-shirt', 9.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Lions Ball Cap</td>
+            <td>$12.99</td>
+            <td><button type="button" onclick="addItem('Lions Ball Cap', 12.99, 1)">Add item</button></td>
+        </tr>
+        <tr>
+            <td>Lions Car Flag</td>
+            <td>$14.99</td>
+            <td><button type="button" onclick="addItem('Lions Car Flag', 14.99, 1)">Add item</button></td>
+        </tr>
+    </table>
+
+    <h3>Name  Price   Quantity</h3>
+    <table id="cart" table border="1" class="table1">
+
+    </table>
+    <table id="total" table border="1" class="table2">
+        
+    </table>
+</body>
+</html>
