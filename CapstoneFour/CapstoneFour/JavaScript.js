@@ -34,21 +34,29 @@ function listCart(cart) {
 
     table.innerHTML = "";
 
+    var row = table.insertRow(0);
 
+    var cell1 = row.insertCell(0);
+
+    var cell2 = row.insertCell(1);
+
+    var cell3 = row.insertCell(2);
+
+    cell1.innerHTML = "Item Name";
+
+    cell2.innerHTML = "Item Price";
+
+    cell3.innerHTML = "Quantity";
 
     for (var i = 0; i < cart.length; i++) {
 
-        var row = table.insertRow(0);
+        var row = table.insertRow(1);
 
+        cell1 = row.insertCell(0);
 
+        cell2 = row.insertCell(1);
 
-        var cell1 = row.insertCell(0);
-
-        var cell2 = row.insertCell(1);
-
-        var cell3 = row.insertCell(2);
-
-
+        cell3 = row.insertCell(2);
 
         cell1.innerHTML = cart[i].name;
 
